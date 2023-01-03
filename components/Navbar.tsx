@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
 
 const Navbar = props => {
-    const user = null;
-    const username = null;
+    const { user, username } = useContext(UserContext);
 
     const renderNotValidated = () => (
         <li>

@@ -1,8 +1,9 @@
 import { auth, googleAuthProvider } from '../lib/firebase';
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
 
 const Enter = props => {
-  const user = null;
-  const username = null;
+  const { user, username } = useContext(UserContext);
 
   if (!user) return <main><SignInButton /></main>
   return (
