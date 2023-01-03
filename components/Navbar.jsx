@@ -4,6 +4,10 @@ import { UserContext } from '../lib/context';
 
 const Navbar = props => {
     const { user, username } = useContext(UserContext);
+    console.log(user);
+    console.log(username);
+
+
 
     const renderNotValidated = () => (
         <li>
